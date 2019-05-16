@@ -30,7 +30,7 @@ end
 
 def take_a_number(deli_line, name)
   counter += 1
-  deli_line << name
+  deli_line << counter
   puts "Welcome, #{name}. You are ticket number #{counter}."
 end
 
@@ -39,7 +39,7 @@ def now_serving(deli_line)
   if deli_line.empty?
     puts "There is nobody waiting to be served!"
   else
-    puts "Currently serving ticket number #{counter}."
+    puts "Currently serving ticket number #{deli_line.first}."
     deli_line.shift()
   end
 end
