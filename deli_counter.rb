@@ -1,6 +1,6 @@
 # Write your code here.
 
-counter = 0
+$counter = 0
 
 def line(deli)
   if deli.empty?
